@@ -1,0 +1,60 @@
+<body>
+  <div class="Login" style="text-align: center">
+    <form class="formSignin" #newListForm="ngForm">
+      <br />
+      <div class="input-group">
+        <span class="class"><i class="fa fa-user"></i></span>
+        <input
+          type="text"
+          class="form-control"
+          id="inputPlayerName"
+          name="listName"
+          [(ngModel)]="selectedList.listDescription "
+          required
+        />
+      </div>
+      <br />
+
+      <div class="input-group">
+        <span class="class"><i class="fa fa-user"></i></span>
+        <input
+          type="text"
+          class="form-control"
+          id="inputPlayerSurname"
+          name="listDescription"
+          
+          [(ngModel)]="selectedList.listName"
+          required
+        />
+      </div>
+      <br />
+
+      <div class="input-group">
+        <span class="class"><i class="fa fa-user"></i></span>
+        <input
+          type="text"
+          class="form-control"
+          id="inputKadi"
+          name="listStatu"
+          [(ngModel)]="users.userName"
+        />
+      </div>
+      
+      <br />
+      <div class="col-sm-12" style="text-align: right; margin-left: 20px">
+        <button
+          type="submit"
+          class="btn btn-lg btn-warning btn-block"
+          (click)="saveList(newListForm.value)"
+          [disabled]="!newListForm.valid"
+        >
+          Kaydet
+        </button>
+      </div>
+
+      <br />
+    </form>
+  </div>
+
+  <div></div>
+</body>

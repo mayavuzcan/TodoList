@@ -1,0 +1,57 @@
+
+
+<body>
+
+<div class = 'Login' style = 'text-align: center'>
+  <div class="welcomePage">
+    
+        <h1 style="color:green" *ngIf = "loginService.loggedIn()"  >
+          &#10004;   Logged In
+        </h1>
+       
+
+          <div class="col-sm-12" style="text-align: center ">
+            <button type = 'button' class = 'btn btn-lg btn-warning btn-block' *ngIf = "loginService.loggedIn()" (click) = 'clickGoProfil(user)'>              
+             Profile
+            </button>
+          </div>
+          
+        <br>
+        <div class="col-sm-12" style="text-align: center ">
+          <button type = 'button'  class = 'btn btn-lg btn-warning btn-block' *ngIf = "loginService.loggedIn()" (click) = 'clickGoCreatList()'>              
+            Creat List
+          </button>
+         </div>
+      
+           <br>
+           <div class="col-sm-12" style="text-align: center ">
+            <button type = 'button'  class = 'btn btn-lg btn-warning btn-block' *ngIf = "loginService.loggedIn()" (click) = 'clickGoList()'>              
+             To do List
+            </button>
+           </div>
+        
+             <br>
+         
+          <div class="col-sm-12" style="text-align: center">
+          
+            <button type = 'button' class = 'btn btn-lg btn-danger btn-block ' *ngIf = "loginService.loggedIn()" (click) = "clickLogout()">    
+              Logout
+            </button>
+          
+          </div>
+
+          
+  </div> 
+
+
+        
+      
+
+   
+    
+    
+  
+</div>
+
+
+</body>

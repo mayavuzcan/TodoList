@@ -1,0 +1,65 @@
+<h1 style="color:tomato"  >
+  To Do List
+</h1>
+
+  
+
+<body>
+
+<div class = 'Login' style = 'text-align: center'>
+  
+    <form class = 'formSignin' #newListForm= 'ngForm'>
+        
+      <div class = 'input-group'>  
+            <span class = 'class'><i class="fa fa-user"></i></span>
+             <input type = 'text' class = 'form-control' id = 'inputlistName' name = 'listName' 
+               placeholder ="Liste Adı" ngModel required >  
+      </div>
+      <br>
+
+      <div class = 'input-group'>  
+          <span class = 'class'><i class="fa fa-user"></i></span>
+           <input type = 'text' class = 'form-control' id = 'inputlistDescription' name = 'listDescription' 
+             placeholder ="Aciklama" ngModel required >  
+    </div>
+    <br>
+
+      
+    
+<br>
+
+
+
+
+
+
+      
+
+        
+
+          <div class="col-sm-12" style="text-align: right ">
+              <button type = 'submit' class = 'btn btn-lg btn-warning btn-block' (click) = 'saveList1(newListForm.value)' [disabled] = '!newListForm.valid' >              
+                  Kayıt
+                </button>
+          </div>
+          
+          <br>
+          
+           
+
+
+        
+      
+
+   
+    
+    </form>  
+  
+</div>
+
+<div>
+
+  
+
+</div>
+</body>

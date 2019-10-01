@@ -1,0 +1,75 @@
+
+body {
+    
+    background-repeat: no-repeat;
+    background-color: purple;
+    background-size: cover;
+    background-position: center; /* Center the image */
+
+
+
+
+    height: 1000px;
+}
+
+.buttonColor{
+
+    background-color: purple;
+}
+  
+  .Login {
+    position: relative;
+    border-radius: 10px;
+    padding: 50px 0 200px 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  } 
+  
+  
+  .welcomePage {
+    width: 100%;
+    max-width: 500px;
+    padding: 60px;
+    margin: auto;
+    background-color: white;
+   }
+  .formSignin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .formSignin .form-control:focus {
+    z-index: 2;
+  }
+  .formSignin input[type = 'email'] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .formSignin input[type = 'password'] {
+    margin-bottom: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 2px;
+  }
+  
+  /*.alert {
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: rgb(230, 11, 11);
+    font-family: Arial;
+    
+  }*/
+  .alert {
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: rgb(230, 11, 11);
+    font-family: Arial;
+    margin-top: 15px;
+  }
+  .fa {
+    font-size: 28px;
+    padding: 10px;
+  }

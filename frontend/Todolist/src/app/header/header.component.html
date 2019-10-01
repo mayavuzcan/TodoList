@@ -1,0 +1,57 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+
+  </h1>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #7b068a;">
+
+  
+      <i class='fas fa-basketball-ball' style='font-size:24px;color:white'></i>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">To Do List <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/welcome" *ngIf = "loginService.loggedIn()">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="listCreat" *ngIf = "loginService.loggedIn()">Creat list <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" *ngIf = "loginService.loggedIn()" style = 'cursor: pointer' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Options
+            </a>
+             <div class = "dropdown-menu" aria-labelledby = "navbarDropdown">
+                <a class="dropdown-item" routerLink="lists">To do List</a>
+                
+              </div>
+              
+        </li>   
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" *ngIf = "loginService.loggedIn()" style = 'cursor: pointer' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filtre
+              </a>
+               <div class = "dropdown-menu" aria-labelledby = "navbarDropdown">
+                  
+                  <a class="dropdown-item" routerLink="completed">Completed</a> 
+                  <a class="dropdown-item" routerLink="uncompleted">Don't Completed</a> 
+
+                </div>
+                
+          </li> 
+                                                                    
+        
+      </ul>
+
+          <button class="btn btn btn-success" type="button" *ngIf = "!loginService.loggedIn()" (click) = "clickLogin()"> Oturum Aç </button> 
+          <button class="btn btn btn-primary " type="button" *ngIf = "!loginService.loggedIn()" (click) = "clickCreat()">Hesap Oluşturun</button>
+          <button class = 'btn btn-outline-light my-2 my-sm-0' type = 'button' *ngIf = "loginService.loggedIn()" (click) = "clickLogout()">Logout</button>
+       
+    </div>
+</nav>
+<router-outlet></router-outlet>

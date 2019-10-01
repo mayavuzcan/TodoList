@@ -1,0 +1,56 @@
+
+
+  
+
+<body>
+    <h1 style="color:tomato"  >
+        Listeye Yapılacakları Ekle
+      </h1>
+<div class = 'Login' style = 'text-align: center'>
+  
+    <form class = 'formSignin' #newTodosForm= 'ngForm'>
+        
+      <div class = 'input-group'>  
+             <input type = 'text' class = 'form-control' id = 'inputlistName' name = 'todosName' 
+               placeholder ="Listeye Ekle" ngModel required >  
+      </div>
+      <br>
+
+      <div class = 'input-group'>  
+          
+           <input type = 'text' class = 'form-control' id = 'inputlistDescription' name = 'todosDescription' 
+             placeholder ="Not Ekle" ngModel required >  
+    </div>
+    <br>
+
+      
+
+
+        
+
+          <div class="col-sm-14" style="text-align: right ">
+              <button type = 'submit' class = 'btn btn-lg btn-warning btn-block' (click) = 'saveTodos(newTodosForm.value)' [disabled] = '!newTodosForm.valid' >              
+                  Kayıt
+                </button>
+          </div>
+          
+          <br>
+          
+           
+
+
+        
+      
+
+   
+    
+    </form>  
+  
+</div>
+
+<div>
+
+  
+
+</div>
+</body>

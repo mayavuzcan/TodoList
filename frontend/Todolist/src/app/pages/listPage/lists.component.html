@@ -1,0 +1,49 @@
+<div class='container'>
+
+	<h3 >Todo List</h3>
+
+	<table class="table table-hover">
+
+		<tr>
+			<th scope = 'col' >List Name</th>
+			<th scope = 'col'>List Description</th>
+			<th scope = 'col'>in List</th>
+			<th scope = 'col'>Add Item</th>
+			<th scope = 'col'>Complete Buttons</th>
+
+		
+			<td >	
+				<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickGoCreat()'> Creat List </button>
+			</td>
+
+		</tr>
+
+		<tbody>
+			<tr *ngFor='let list of lists ; let i = index'>
+			
+			<td *ngIf="list.listStatu == 0" > 
+				{{ list.listName }}		
+			</td>
+			<td *ngIf="list.listStatu == 0"> 
+				{{ list.listDescription }} 
+			</td>
+				
+			<td *ngIf="list.listStatu == 0">	
+				
+				<button  class ='btn btn-outline-primary btn-sm ' (click) = 'clickProfile(list)'> In List </button>
+			</td>
+
+			<td *ngIf="list.listStatu == 0">	
+				<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickOlustur(list)'> Add   </button>
+			</td>
+
+			<td *ngIf="list.listStatu == 0">	
+				<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickComplete(list)'> Complete </button>
+			</td>
+
+			
+			</tr>
+
+		</tbody>
+	</table>
+	<br>
