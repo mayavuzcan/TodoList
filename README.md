@@ -4,7 +4,7 @@ To Do List Uygulamasi (Java,JAvaScript,Angular,Spring)
 
 Uygulamayi Yuklemek için Angularyüklü olmalıdır.Anguları yüklemek içinde Node.js gerekmektedir
 
-Node.js buradan (https://nodejs.org/en/download/)ücretsiz olarak yüklenebilir. 
+Node.js buradan (https://nodejs.org/en/download/) ücretsiz olarak yüklenebilir. 
 Burada Windows Installer (.msi) seçeneğini kullanacağız. 
 Bilgisayarınızdaki işletim sisteminin 32-bit ya da 64-bit olmasına göre ilgili dosyayı indirin.
 İndirdikten sonra next next yapıp Node.js'i yükleyin.
@@ -38,6 +38,6 @@ Projenin demosuna "Logout" tıklayarak başlayabilirsiniz ardından Hesap Oluşt
 
 NOT: Proje css kodlarının çalışması için bootstrap frontend de angulara dahil edilmelidir.Şahsıma ulaşıldığında node modules dosyasını gönderebilirim..Github node modules dosyalarını almıyor..
 
-mayavuzcan@gmail.com
+
 
 --Beta Sürüm--
