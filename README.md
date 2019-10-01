@@ -15,14 +15,20 @@ Bunun için terminalden / komut satırından
 
 "npm install -g @angular/cli"
 
-Bu komutu yükledikten sonra Eclipse te projeyi çalıştırmak için 
+Bu komutu yükledikten sonra 
+
+--Backend te Spring ile--
+Eclipse te projeyi çalıştırmak için 
 
 "Import"--"Existing Import"--"Pom.xml"--"Finish"
 
-Butonlarını takip ederek projeyi Eclipse aktara bilirsiniz ardından frontend de Angular için
-Vscode ile "Open Foulder" diyip proje forntend dosyasını açarak terminale ilk önce
+Butonlarını takip ederek projeyi Eclipse aktarabilirsiniz ardından frontend de
 
-"npmm install"
+-- Angular için--
+
+Vscode ile "Open Foulder" diyip proje frontend dosyasını açarak terminale ilk önce
+
+"npm install"
 
 Yazarak modullerin eklenmesini bekleyin.Ardından "ng serve" yaparak projeyi frontendde Angular ile çalıştırın.
 Daha sonra backend içinEclipse te projeyi run edin. ARdından http://localhost:4200/ taki web sayfasına giderek projeyi kullanabilirsiniz.
