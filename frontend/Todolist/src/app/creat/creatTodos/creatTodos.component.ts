@@ -41,7 +41,7 @@ export class CreatTodosComponent implements OnInit {
     
     console.log(this.Too);
     this.todos1.todosText=this.Too.listName;
-
+    this.todos1.todosStatu= "0";
     console.log(this.todos1);
     this.todoService.saveTodos(this.todos1).subscribe(resp => {
       

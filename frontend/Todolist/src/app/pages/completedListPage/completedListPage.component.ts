@@ -28,7 +28,7 @@ export class CompletedListPageComponent implements OnInit {
               ) { }
 
   ngOnInit() {
-    this.getCompletedList();
+    this.getList();
   }
 
   clickProfile(list) {
@@ -46,6 +46,13 @@ export class CompletedListPageComponent implements OnInit {
   }
   getCompletedList(){
     this.listService.getCompletedList().subscribe(list => {
+      this.lists = (list);
+      
+      console.log(this.lists); 
+    });
+  }
+  getList(){
+    this.listService.getList().subscribe(list => {
       this.lists = (list);
       
       console.log(this.lists); 

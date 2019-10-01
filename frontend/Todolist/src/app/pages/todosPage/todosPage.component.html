@@ -15,11 +15,11 @@
 			<tr *ngFor='let todo of todos ; let i = index'>
 			
 				
-				<td  > {{ todo.todosDescription }} </td>
-				<td  > {{ todo.todosName }} </td>
+				<td   *ngIf="todo.todosStatu == 0" > {{ todo.todosDescription }} </td>
+				<td   *ngIf="todo.todosStatu == 0" > {{ todo.todosName }} </td>
 				
 			
-			<td >	
+			<td  *ngIf=" todo.todosStatu == 0 "  >	
 					<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickComplete(todo)'> Complete </button>
 			</td>
 	

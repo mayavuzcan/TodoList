@@ -30,7 +30,7 @@ export class UnCompletedListPageComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getunCompletedList();
+    this.getList();
   }
 
   getunCompletedList(){
@@ -73,6 +73,13 @@ export class UnCompletedListPageComponent implements OnInit {
     });
    
     this.router.navigate(['uncompleted']);
+  }
+  getList(){
+    this.listService.getList().subscribe(list => {
+      this.lists = (list);
+      
+      console.log(this.lists); 
+    });
   }
 
 }

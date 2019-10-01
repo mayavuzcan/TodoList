@@ -15,12 +15,12 @@
       <tbody>
         <tr *ngFor='let list of lists ; let i = index'>
         
-        <td> 
-          {{ list.listName }}		
-        </td>
-        <td> 
-          {{ list.listDescription }} 
-        </td>
+          <td *ngIf="list.listStatu == 1"> 
+            {{ list.listName }}		
+          </td>
+          <td *ngIf="list.listStatu == 1"> 
+            {{ list.listDescription }} 
+          </td>
           
         
   

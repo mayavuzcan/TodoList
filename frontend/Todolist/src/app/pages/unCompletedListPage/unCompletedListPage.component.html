@@ -18,24 +18,24 @@
       <tbody>
         <tr *ngFor='let list of lists ; let i = index'>
         
-        <td> 
-          {{ list.listName }}		
-        </td>
-        <td> 
-          {{ list.listDescription }} 
-        </td>
-          
-        <td>	
-          <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickProfile(list)'>Göster</button>
-        </td>
-  
-        <td>	
-          <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickOlustur(list)'>Ekle</button>
-        </td>
-  
-        <td>	
-          <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickComplete(list)'>Bitir</button>
-        </td>
+          <td *ngIf="list.listStatu == 0"> 
+            {{ list.listName }}		
+          </td>
+          <td *ngIf="list.listStatu == 0"> 
+            {{ list.listDescription }} 
+          </td>
+            
+          <td *ngIf="list.listStatu == 0">	
+            <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickProfile(list)'>Göster</button>
+          </td>
+    
+          <td *ngIf="list.listStatu == 0">	
+            <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickOlustur(list)'>Ekle</button>
+          </td>
+    
+          <td *ngIf="list.listStatu == 0">	
+            <button   class = 'btn btn-outline-primary btn-sm' (click) = 'clickComplete(list)'>Bitir</button>
+          </td>
   
         </tr>
   

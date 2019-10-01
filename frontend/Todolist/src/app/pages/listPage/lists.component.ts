@@ -57,6 +57,8 @@ export class ListsComponent implements OnInit {
     this.looks.id="1";
     this.looks.lookName=this.listos.listName;
     this.mes=this.listos.listName;
+    localStorage.removeItem('dataLook');
+
     localStorage.setItem('dataLook',this.mes);
     this.lookService.saveLook(this.looks).subscribe(resp => {
       

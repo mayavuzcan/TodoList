@@ -20,6 +20,8 @@ export class HeaderComponent implements OnInit {
   }
   clickLogout() {
    localStorage.removeItem('currentUser');
+   localStorage.removeItem('dataLook');
+
    this.router.navigate(['']); 
   }
   clickCreat(){
