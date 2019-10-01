@@ -38,4 +38,6 @@ Projenin demosuna "Logout" tıklayarak başlayabilirsiniz ardından Hesap Oluşt
 
 NOT: Proje css kodlarının çalışması için bootstrap frontend de angulara dahil edilmelidir.Şahsıma ulaşıldığında node modules dosyasını gönderebilirim..Github node modules dosyalarını almıyor..
 
+mayavuzcan@gmail.com
+
 --Beta Sürüm--
