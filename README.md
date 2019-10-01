@@ -29,4 +29,7 @@ Daha sonra backend içinEclipse te projeyi run edin. ARdından http://localhost:
 
 Projenin demosuna "Logout" tıklayarak başlayabilirsiniz ardından Hesap Oluşturma butonu çıkacaktır..
 
+
+NOT: Proje css kodlarının çalışması için bootstrap frontend de angulara dahil edilmelidir..
+
 --Beta Sürüm--
