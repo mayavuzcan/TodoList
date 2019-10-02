@@ -83,7 +83,9 @@ export class ListsComponent implements OnInit {
   }
   
   clickDelete(list) {
-    this.listService.deleteList(list)
+    this.listService.setSelectedList(list);
+    
+    this.listService.deleteList();
     
    
     this.router.navigate(['lists']);

@@ -41,6 +41,10 @@
 				<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickComplete(list)'> Complete </button>
 			</td>
 
+			<td *ngIf="list.listStatu == 0">	
+				<button   class ='btn btn-outline-primary btn-sm' (click) = 'clickDelete(list)'> Delete </button>
+			</td>
+
 			
 			</tr>
 

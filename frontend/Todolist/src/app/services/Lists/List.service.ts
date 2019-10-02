@@ -43,9 +43,9 @@ saveList(list) {
   return this.http.post('http://localhost:8080/creatList', list).pipe();
 }
 
-deleteList(list: Lists) {
-  this.id1.id=list.id;
-  this.http.delete(this.deleteUrl+'/'+this.id1.id).pipe();
+deleteList() {
+  this.id1.id=this.selectedList.id;
+  this.http.delete(this.deleteUrl+"/"+this.id1.id).pipe();
 }
 
 }

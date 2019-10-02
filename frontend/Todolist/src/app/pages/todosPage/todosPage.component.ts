@@ -64,7 +64,7 @@ export class TodosPageComponent implements OnInit {
     this.listos.todosStatu="1";
    
 
-    this.listService.saveList(this.listos).subscribe(resp => {
+    this.todosService.saveTodos(this.listos).subscribe(resp => {
 
 
 
